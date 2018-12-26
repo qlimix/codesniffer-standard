@@ -2,7 +2,7 @@
 <ruleset
         name="Qlimix"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="../../code-standard/vendor/squizlabs/php_codesniffer/phpcs.xsd"
+        xsi:noNamespaceSchemaLocation="../../../code-standard/vendor/squizlabs/php_codesniffer/phpcs.xsd"
 >
     <description>Qlimix coding standard.</description>
 
