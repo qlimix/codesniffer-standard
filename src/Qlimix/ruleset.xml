@@ -140,6 +140,7 @@
                 "/>
                 <element value="@param"/>
                 <element value="@return"/>
+                <element value="@inheritdoc"/>
                 <element value="@throws"/>
             </property>
         </properties>
@@ -407,6 +408,8 @@
         <exclude name="Squiz.Commenting.FunctionComment.ThrowsNotCapital"/>
         <!-- Doesn't work with self as typehint -->
         <exclude name="Squiz.Commenting.FunctionComment.TypeHintMissing"/>
+        <!-- Forces spaces by mixed array type hinting -->
+        <exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamType"/>
     </rule>
     <!-- Forbid global functions -->
     <rule ref="Squiz.Functions.GlobalFunction"/>
