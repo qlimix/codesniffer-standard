@@ -138,9 +138,9 @@
                     @ORM\,
                     @ODM\,
                 "/>
+                <element value="@inheritdoc"/>
                 <element value="@param"/>
                 <element value="@return"/>
-                <element value="@inheritdoc"/>
                 <element value="@throws"/>
             </property>
         </properties>
