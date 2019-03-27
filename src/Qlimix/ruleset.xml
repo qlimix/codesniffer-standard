@@ -193,8 +193,6 @@
     </rule>
     <!-- Forbid fancy yoda conditions -->
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison"/>
-    <!-- Forbid weak comparisons -->
-    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowEqualOperators"/>
     <!-- Require usage of early exit -->
     <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit"/>
     <!-- Require language constructs without parentheses -->
@@ -261,6 +259,8 @@
     </rule>
     <!-- Forbid useless alias for classes, constants and functions -->
     <rule ref="SlevomatCodingStandard.Namespaces.UselessAlias"/>
+    <!-- Forbid weak comparisons -->
+    <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators"/>
     <!-- Require the usage of assignment operators, eg `+=`, `.=` when possible -->
     <rule ref="SlevomatCodingStandard.Operators.RequireCombinedAssignmentOperator"/>
     <!-- Require increment/decrement stand alone only for readability -->
