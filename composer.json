@@ -4,7 +4,6 @@
     "description": "Qlimix codesniffer standard",
     "license": "MIT",
     "keywords": [
-        "qlimix",
         "standard",
         "coding",
         "style",
@@ -21,8 +20,8 @@
     "require": {
         "php": ">=7.4",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
-        "slevomat/coding-standard": "^5.0",
-        "squizlabs/php_codesniffer": "^3.4"
+        "slevomat/coding-standard": "^6.0",
+        "squizlabs/php_codesniffer": "^3.5"
     },
     "config": {
         "sort-packages": true
