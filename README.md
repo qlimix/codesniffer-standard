@@ -1,5 +1,6 @@
 # codesniffer-standard
 
+[![Travis CI](https://api.travis-ci.org/qlimix/codesniffer-standard.svg?branch=master)](https://travis-ci.org/qlimix/codesniffer-standard)
 [![Packagist](https://img.shields.io/packagist/v/qlimix/codesniffer-standard.svg)](https://packagist.org/packages/qlimix/codesniffer-standard)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/qlimix/codesniffer-standard/blob/master/LICENSE)
 
