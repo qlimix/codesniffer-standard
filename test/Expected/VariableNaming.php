@@ -7,4 +7,14 @@ final class VariableNaming
     private int $fooBar;
 
     private int $fooBarVeryLong;
+
+    public function getFooBar(): int
+    {
+        return $this->fooBar;
+    }
+
+    public function getFooBarVeryLong(): int
+    {
+        return $this->fooBarVeryLong;
+    }
 }
