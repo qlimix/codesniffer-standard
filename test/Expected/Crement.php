@@ -4,12 +4,14 @@ namespace Expected;
 
 final class Crement
 {
-    public function crementIt(int $int): void
+    public function crementIt(int $int): int
     {
         $int--;
         --$int;
 
         $int++;
         ++$int;
+
+        return $int;
     }
 }

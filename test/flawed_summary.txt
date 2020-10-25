@@ -3,10 +3,10 @@ PHP CODE SNIFFER REPORT SUMMARY
 ----------------------------------------------------------------------
 FILE                                                  ERRORS  WARNINGS
 ----------------------------------------------------------------------
-test/Flawed/ArrayLines.php                            7       0
+test/Flawed/ArrayLines.php                            6       0
 test/Flawed/Casting.php                               1       0
-test/Flawed/ControlStatement.php                      3       0
-test/Flawed/Crement.php                               4       0
+test/Flawed/ControlStatement.php                      11      0
+test/Flawed/Crement.php                               5       0
 test/Flawed/DocBlocks.php                             10      0
 test/Flawed/Eching.php                                3       0
 test/Flawed/ImportNative.php                          3       0
@@ -14,10 +14,11 @@ test/Flawed/Operators.php                             2       0
 test/Flawed/SingleQuote.php                           1       0
 test/Flawed/Throwing.php                              1       0
 test/Flawed/Typing.php                                10      0
+test/Flawed/VariableNaming.php                        2       0
 ----------------------------------------------------------------------
-A TOTAL OF 45 ERRORS AND 0 WARNINGS WERE FOUND IN 11 FILES
+A TOTAL OF 55 ERRORS AND 0 WARNINGS WERE FOUND IN 12 FILES
 ----------------------------------------------------------------------
-PHPCBF CAN FIX 24 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX 32 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
 
