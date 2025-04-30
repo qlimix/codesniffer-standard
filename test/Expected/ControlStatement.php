@@ -32,7 +32,6 @@ final class ControlStatement
                 return 2;
             case 3:
                 return $value - 2;
-                break;
             case 4:
                 break;
             default:

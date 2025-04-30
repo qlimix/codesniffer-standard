@@ -113,8 +113,6 @@
             <property name="linesCountBetweenUses" value="0"/>
         </properties>
     </rule>
-    <!-- Forbid dead code -->
-    <rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/>
     <!-- Forbid empty lines around type declarations -->
     <rule ref="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces">
         <properties>
@@ -221,24 +219,24 @@
         <exclude name="SlevomatCodingStandard.ControlStructures.BlockControlStructureSpacing.IncorrectLinesCountBeforeControlStructure" />
         <exclude name="SlevomatCodingStandard.ControlStructures.BlockControlStructureSpacing.IncorrectLinesCountBeforeFirstControlStructure" />
         <properties>
-            <property name="tokensToCheck" type="array">
-                <element value="T_IF" />
-                <element value="T_DO" />
-                <element value="T_WHILE" />
-                <element value="T_FOR" />
-                <element value="T_FOREACH" />
-                <element value="T_SWITCH" />
-                <element value="T_TRY" />
-                <element value="T_DEFAULT" />
+            <property name="controlStructures" type="array">
+                <element value="if" />
+                <element value="do" />
+                <element value="while" />
+                <element value="for" />
+                <element value="foreach" />
+                <element value="switch" />
+                <element value="try" />
+                <element value="default" />
             </property>
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.ControlStructures.JumpStatementsSpacing">
         <properties>
-            <property name="linesCountAfterControlStructure" value="0"/>
-            <property name="tokensToCheck" type="array">
-                <element value="T_THROW" />
-                <element value="T_RETURN" />
+            <property name="linesCountAfterLast" value="0"/>
+            <property name="jumpStatements" type="array">
+                <element value="throw" />
+                <element value="return" />
             </property>
         </properties>
     </rule>
@@ -291,9 +289,9 @@
     <!-- Require presence of declare(strict_types=1) -->
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
         <properties>
-            <property name="newlinesCountBetweenOpenTagAndDeclare" value="0"/>
+            <property name="declareOnFirstLine" value="true"/>
+            <property name="linesCountAfterDeclare" value="1"/>
             <property name="spacesCountAroundEqualsSign" value="0"/>
-            <property name="newlinesCountAfterDeclare" value="2"/>
         </properties>
     </rule>
     <!-- Forbid useless parentheses -->
@@ -423,6 +421,10 @@
     <rule ref="Squiz.Operators.ValidLogicalOperators"/>
     <!-- Forbid `global` -->
     <rule ref="Squiz.PHP.GlobalKeyword"/>
+    <!-- Force camelCase variables -->
+    <rule ref="Squiz.NamingConventions.ValidVariableName">
+        <exclude name="Squiz.NamingConventions.ValidVariableName.PrivateNoUnderscore" />
+    </rule>
     <!-- Forbid functions inside functions -->
     <rule ref="Squiz.PHP.InnerFunctions"/>
     <!-- Require PHP function calls in lowercase -->
