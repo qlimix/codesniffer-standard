@@ -1,3 +1,8 @@
+## 6.0.0 - 04-11-2026
+
+Backwards compatibility changes:
+ - `tests` directories are no longer excluded, so tests have to follow the standard as well
+
 ## 5.0.0 - 04-11-2026
 
 General:
