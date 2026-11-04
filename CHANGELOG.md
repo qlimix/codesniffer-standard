@@ -1,3 +1,16 @@
+## 5.0.0 - 04-11-2026
+
+General:
+ - squizlabs/php_codesniffer ^4.0
+ - slevomat/coding-standard ^8.31
+
+Backwards compatibility changes:
+ - `Squiz.WhiteSpace.LanguageConstructSpacing` (removed in PHP_CodeSniffer 4) replaced by
+   `Generic.WhiteSpace.LanguageConstructSpacing`
+
+Fixes:
+ - ruleset schema location points at this package's own `vendor/squizlabs/php_codesniffer/phpcs.xsd`
+
 ## 3.0.0 - 25-10-2020
 
 General:
